@@ -1,0 +1,45 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e cache
+*.log
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilados e builds
+bin/
+obj/
+dist/
+build/
+out/
+
+# Node e .NET
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Dependências e pacotes
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Testes
+coverage/
+*.coverage
+TestResult.xml
+
+# Docker
+docker-compose.override.yml
+docker-data/
