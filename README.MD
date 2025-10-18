@@ -20,7 +20,7 @@ Meu percurso técnico: do *Hello World* até sistemas fullstack prontos para pro
 ## 🚀 Progresso
 
 - [x] **Módulo 0 — Setup**
-- [⚙️] **Módulo 1 — Fundamentos .NET/C#**
+- [x] **Módulo 1 — Fundamentos .NET/C#**
 - [ ] **Módulo 2 — PostgreSQL + EF Core**
 - [ ] **Módulo 3 — API Catálogo (CRUD, filtros, paginação)**
 - [ ] **Módulo 4 — Auth (JWT, roles, policies)**
@@ -53,7 +53,9 @@ Repositório organizado e pronto para desenvolvimento.
 
 ---
 
-### ⚙️ Módulo 1 — Fundamentos .NET/C#
+### ✅ Módulo 1 — Fundamentos .NET/C#
+**Status:** Concluído — 18/10/2025  
+
 **Objetivo:**  
 Dominar a base da criação de APIs com .NET 8 e entender profundamente o ciclo requisição–resposta.
 
@@ -71,6 +73,22 @@ Dominar a base da criação de APIs com .NET 8 e entender profundamente o ciclo 
 **Entrega:**  
 API funcional com endpoints básicos (`/hello`, `/hello/{name}` e `/hello?name=`)  
 – projeto base para evoluir em cima.
+
+---
+
+### 🧩 Conclusões do módulo
+**Aprendizados principais:**  
+- Entendimento completo do ciclo requisição → controller → resposta  
+- Diferença entre `[FromRoute]`, `[FromQuery]` e `[FromBody]`  
+- Criação de um `DTO` e envio de dados via JSON  
+- Retornos semânticos com `IActionResult` (`Ok`, `BadRequest`, `Created`, `NotFound`)  
+- Organização inicial com boas práticas de estrutura  
+
+**Entregas realizadas:**  
+- Projeto ASP.NET 8 configurado e funcional com Swagger  
+- Controller `HelloController` criado e testado  
+- DTO `UserDto` criado e funcional  
+- Testes executados com sucesso no Swagger  
 
 ---
 
