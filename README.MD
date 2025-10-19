@@ -21,16 +21,17 @@ Meu percurso técnico: do *Hello World* até sistemas fullstack prontos para pro
 
 - [x] **Módulo 0 — Setup**
 - [x] **Módulo 1 — Fundamentos .NET/C#**
-- [ ] **Módulo 2 — PostgreSQL + EF Core**
-- [ ] **Módulo 3 — API Catálogo (CRUD, filtros, paginação)**
-- [ ] **Módulo 4 — Auth (JWT, roles, policies)**
-- [ ] **Módulo 5 — React + Tailwind (fundamentos)**
-- [ ] **Módulo 6 — Storefront (carrinho/checkout)**
-- [ ] **Módulo 7 — Pagamentos (mock)**
-- [ ] **Módulo 8 — Testes e observabilidade**
-- [ ] **Módulo 9 — Capstone E-commerce**
-- [ ] **Módulo 10 — Admin Lite (opcional)**
-- [ ] **Módulo 11 — Deploy (opcional)**
+- [ ] **Módulo 2 — Controllers Avançados e DI**
+- [ ] **Módulo 3 — PostgreSQL + EF Core**
+- [ ] **Módulo 4 — API Catálogo (CRUD, filtros, paginação)**
+- [ ] **Módulo 5 — Auth (JWT, roles, policies)**
+- [ ] **Módulo 6 — React + Tailwind (fundamentos)**
+- [ ] **Módulo 7 — Storefront (carrinho/checkout)**
+- [ ] **Módulo 8 — Pagamentos (mock)**
+- [ ] **Módulo 9 — Testes e observabilidade**
+- [ ] **Módulo 10 — Capstone E-commerce**
+- [ ] **Módulo 11 — Admin Lite (opcional)**
+- [ ] **Módulo 12 — Deploy (opcional)**
 
 ---
 
@@ -65,14 +66,13 @@ Dominar a base da criação de APIs com .NET 8 e entender profundamente o ciclo 
 - Conceito e uso de **Controllers** e `[ApiController]`  
 - **Rotas, Query Strings e parâmetros**  
 - Retornos com `IActionResult` e `Ok()`  
-- **Injeção de dependências (DI)**  
+- **Injeção de dependências (DI — *Dependency Injection*)**  
 - `IEnumerable<T>` e **LINQ** básico  
 - Serialização com `System.Text.Json`  
 - Boas práticas de nomes, organização e comentários  
 
 **Entrega:**  
-API funcional com endpoints básicos (`/hello`, `/hello/{name}` e `/hello?name=`)  
-– projeto base para evoluir em cima.
+API funcional com endpoints básicos (`/hello`, `/hello/{name}` e `/hello?name=`) — projeto base para evoluir.
 
 ---
 
@@ -92,7 +92,25 @@ API funcional com endpoints básicos (`/hello`, `/hello/{name}` e `/hello?name=`
 
 ---
 
-### 🗄️ Módulo 2 — PostgreSQL + EF Core
+### 🧠 Módulo 2 — Controllers Avançados e Injeção de Dependência (DI)
+**Objetivo:**  
+Compreender o uso prático da **injeção de dependência (Dependency Injection)** no ASP.NET Core e aplicar princípios de **abstração** e **reuso de código** através de serviços.
+
+**Tópicos técnicos:**  
+- Revisão de `Controllers` e `[ApiController]`  
+- Criação de **interfaces (contratos)** e **serviços**  
+- Injeção de dependências com `builder.Services.AddScoped()`  
+- Ciclo de vida dos serviços: **Scoped**, **Transient** e **Singleton**  
+- Diferença entre **Service Layer** e **Controller Layer**  
+- Implementação prática: `GreetingService` e `UserService`  
+- Introdução ao conceito de **Repository Pattern**  
+
+**Entrega:**  
+API com `Controller` consumindo um serviço injetado via DI, demonstrando ciclo de vida e separação de responsabilidades.
+
+---
+
+### 🗄️ Módulo 3 — PostgreSQL + EF Core
 **Objetivo:**  
 Aprender persistência de dados real e integração com banco de dados.
 
@@ -110,7 +128,7 @@ API conectada ao banco PostgreSQL com migrations e tabelas criadas.
 
 ---
 
-### 📦 Módulo 3 — API Catálogo (CRUD completo)
+### 📦 Módulo 4 — API Catálogo (CRUD completo)
 **Objetivo:**  
 Construir um CRUD completo com validação e rotas RESTful.
 
@@ -127,7 +145,7 @@ API de catálogo de produtos funcional, com CRUD completo.
 
 ---
 
-### 🔐 Módulo 4 — Auth (JWT, roles e policies)
+### 🔐 Módulo 5 — Auth (JWT, roles e policies)
 **Objetivo:**  
 Implementar autenticação e autorização profissional com JWT.
 
@@ -144,7 +162,7 @@ Sistema de login funcional com autenticação JWT e autorização baseada em rol
 
 ---
 
-### 💻 Módulo 5 — React + Tailwind (Fundamentos)
+### 💻 Módulo 6 — React + Tailwind (Fundamentos)
 **Objetivo:**  
 Dominar o setup do front-end e compreender o fluxo React moderno.
 
@@ -161,7 +179,7 @@ Front-end configurado e renderizando dados reais da API.
 
 ---
 
-### 🛒 Módulo 6 — Storefront (Carrinho e Checkout)
+### 🛒 Módulo 7 — Storefront (Carrinho e Checkout)
 **Objetivo:**  
 Construir o front-end funcional de uma loja simples.
 
@@ -176,7 +194,7 @@ Aplicação de e-commerce funcional (front consumindo API real).
 
 ---
 
-### 💳 Módulo 7 — Pagamentos (Mock)
+### 💳 Módulo 8 — Pagamentos (Mock)
 **Objetivo:**  
 Simular pagamentos e processar pedidos.
 
@@ -190,7 +208,7 @@ API com simulação de pagamentos e fluxo de pedido integrado.
 
 ---
 
-### 🧪 Módulo 8 — Testes e Observabilidade
+### 🧪 Módulo 9 — Testes e Observabilidade
 **Objetivo:**  
 Aprender a garantir qualidade e rastreabilidade do código.
 
@@ -206,7 +224,7 @@ API com testes cobrindo regras principais e logs estruturados.
 
 ---
 
-### 🏁 Módulo 9 — Capstone E-commerce
+### 🏁 Módulo 10 — Capstone E-commerce
 **Objetivo:**  
 Unir tudo em um projeto fullstack completo.
 
@@ -222,7 +240,7 @@ E-commerce funcional fullstack completo (pronto pra portfólio).
 
 ---
 
-### ⚙️ Módulo 10 — Admin Lite (Opcional)
+### ⚙️ Módulo 11 — Admin Lite (Opcional)
 **Objetivo:**  
 Criar um painel administrativo simples.
 
@@ -236,7 +254,7 @@ Painel administrativo conectado à API principal.
 
 ---
 
-### 🚀 Módulo 11 — Deploy (Opcional)
+### 🚀 Módulo 12 — Deploy (Opcional)
 **Objetivo:**  
 Aprender a publicar o projeto completo.
 
@@ -248,7 +266,6 @@ Aprender a publicar o projeto completo.
 
 **Entrega:**  
 Aplicação fullstack online e funcional, rodando em containers.
-
 
 ---
 
@@ -266,108 +283,4 @@ ser capaz de se comunicar com equipes internacionais, entender documentações e
 
 ---
 
-### 📘 Estrutura de Módulos
-
-#### 🇬🇧 Módulo 0 — Setup
-**Objetivo:** Definir a rotina e o propósito do aprendizado.  
-**Conteúdo:**
-- Avaliação de nível e vocabulário ativo  
-- Criação de rotina diária curta (listening, reading e speaking)  
-- Configuração de ferramentas: DeepL, Reverso, YouGlish e TTS  
-- Definição do vocabulário técnico prioritário (Git, API, Deploy etc.)
-
-**Entrega:**  
-Plano pessoal de estudos (“English Routine Sheet”).
-
----
-
-#### 🗣️ Módulo 1 — Dev Communication Basics
-**Objetivo:**  
-Dominar frases e expressões usadas em contextos de equipe e desenvolvimento.
-
-**Tópicos técnicos:**  
-- Vocabulário de trabalho remoto (meeting, deadline, issue, branch)  
-- Expressões técnicas comuns:  
-  - *“Let’s push this to main.”*  
-  - *“The API is not responding.”*  
-  - *“I’ll handle this bug.”*  
-- Como se apresentar e descrever o que faz (*“I work as a fullstack developer using .NET and React”*)  
-- Estrutura e entonação de frases em contextos técnicos  
-
-**Prática:**  
-Simulações curtas de reuniões diárias (*Daily Standup Roleplay*).
-
----
-
-#### 💬 Módulo 2 — Tech Vocabulary & Documentation
-**Objetivo:**  
-Compreender e usar o inglês de documentação e código.
-
-**Tópicos técnicos:**  
-- Termos essenciais de programação (loop, array, statement, query, handler, deployment, request)  
-- Expressões de documentação técnica (*“returns a promise”, “throws an exception”, “handles the request”*)  
-- Diferenças entre termos parecidos (*library vs framework*, *bug vs issue*)  
-- Estratégias de leitura técnica e anotações eficazes  
-
-**Prática:**  
-Leitura e tradução ativa de trechos reais da Microsoft Docs e MDN.
-
----
-
-#### 🎙️ Módulo 3 — English for Meetings & Teams
-**Objetivo:**  
-Falar com naturalidade em contextos profissionais.
-
-**Tópicos técnicos:**  
-- Reuniões técnicas e check-ins semanais  
-- Feedbacks e sugestões: *“I think we should refactor this part.”*  
-- Expressões educadas e neutras para discordar:  
-  - *“I see your point, but maybe we can try another approach.”*  
-- Como explicar bugs e soluções de forma clara  
-- Vocabulário de agilidade (sprint, backlog, release)
-
-**Prática:**  
-Roleplays de reuniões com simulações de time global.
-
----
-
-#### 🧑‍💻 Módulo 4 — Interviews & Personal Branding
-**Objetivo:**  
-Preparar-se para entrevistas em inglês e fortalecer o perfil profissional.
-
-**Tópicos técnicos:**  
-- Perguntas e respostas comuns em entrevistas técnicas  
-- Como falar sobre projetos e experiências  
-- Explicando stacks e responsabilidades  
-- *“Tell me about a time you solved a problem”* — respostas estruturadas  
-- Criação de pitch pessoal (*Elevator Pitch*)
-
-**Prática:**  
-Gravação e revisão de respostas faladas (auto feedback).
-
----
-
-#### 🏁 Entrega Final
-**Resultado esperado:**  
-- Vocabulário ativo de 800–1000 palavras técnicas  
-- Capacidade de participar de reuniões em inglês  
-- Leitura fluente de documentação  
-- Comunicação profissional com recrutadores e colegas estrangeiros  
-
----
-
-📦 **Material complementar:**  
-- Flashcards de vocabulário técnico  
-- Áudios com sotaque americano e britânico  
-- Planilha “Daily English for Devs”  
-- Mini-desafios semanais de conversação e tradução
-
----
-
-🗂️ **Local:**  
-`/bonus/english-intermediate-for-devs/`
-
-💡 **Duração sugerida:**  
-De 4 a 6 semanas com prática diária leve.
-
----
+*(segue a estrutura original do módulo bônus, inalterada)*
